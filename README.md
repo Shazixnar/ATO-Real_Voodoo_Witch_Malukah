@@ -7,9 +7,9 @@ A content pack for [Obeliskial Content](https://across-the-obelisk.thunderstore.
 
 ### Enchantments
 
-![Yin_Ritual](Picture/yin_ritual.png)
+![Yin_Ritual](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/yin_ritual.png?raw=true)
 
-![Yang_Ritual](Picture/yang_ritual.png)
+![Yang_Ritual](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/yang_ritual.png?raw=true)
 </details>
 
 <details>
@@ -35,13 +35,15 @@ e.g. Team have **The Dark One** and **Black Deck**, Malukah choice Shadow Form t
 
 ### Cards
 
-![Black_Hole](Picture/black_hole.png)
+![Black_Hole](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/black_hole.png?raw=true)
 
-![Circle_of_Healing](Picture/circle_of_healing.png)
+![Circle_of_Healing](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/circle_of_healing.png?raw=true)
 
-![Pulsing_Heal](Picture/pulsing_heal.png)
+![Pulsing_Heal](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/pulsing_heal.png?raw=true)
 
-And 13 more cards.
+![Ruin_Bolt](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/ruin_bolt.png?raw=true)
+
+And 12 more cards.
 
 Cards List: **Black Hole**, **Circle of Healing**, **Condemnation**, **Dark Outbreak**, **Death's Reach**, **Entomb**, **Mass Dispel**, **Melodic Rhythm**, **Profane**, **Pulsing Heal**, **Ruin Bolt**, **Shadow Mend**, **Strong Mojo**, **Unholy Storm**, **Vile Lance**, **Vitalize**.
 </details>
@@ -80,6 +82,8 @@ I'll be modifying this data frequently to make balance. So the picture maybe isn
 ## Support
 
 I will keep watching for cards strength, try to make sure these cards display their strength that should be there.
+
+Malukah has two way now. One is the dangerous Witch who curse enemies badly and let her team have power of shadow too. The other way is kindness Witch who use her mojo make team more vibrant.
 
 Hope you enjoy it and if have any idea or bug, just open a github issue or make a post in the **modding #support-and-requests** channel of the [official Across the Obelisk Discord](https://discord.gg/across-the-obelisk-679706811108163701).
 

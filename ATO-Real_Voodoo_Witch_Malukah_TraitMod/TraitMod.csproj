@@ -6,7 +6,7 @@
 	<Product>RealVoodooWitchTraits</Product>
     <AssemblyName>com.shazixnar.RealVoodooWitchTraits</AssemblyName>
     <Description>Real Voodoo Witch Traits, made by Shazixnar</Description>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
