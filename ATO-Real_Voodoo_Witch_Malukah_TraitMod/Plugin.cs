@@ -33,7 +33,7 @@ namespace RealVoodooWitchMalukah
             medsTexts["custommainperksharp1d"] = "Sharp on heroes also increases the Shadow damage by 1 per charge.";
             medsTexts["custommainperkregeneration1c"] = "Regeneration on heroes also increases all resistance by 0.5% per charge and increases Max HP by 1 per charge.";
             medsTexts["custommainperkvitality1a"] = "Vitality on heroes instead increases Max HP by 8 per charge.";
-            medsTexts["custommainperkdark2c"] = "Dark explotion on enemies deals 0.7 more damage per charge.";
+            medsTexts["custommainperkdark2c"] = "Dark explosion on enemies deals 0.7 more damage per charge.";
             // apply patches
             harmony.PatchAll();
         }
