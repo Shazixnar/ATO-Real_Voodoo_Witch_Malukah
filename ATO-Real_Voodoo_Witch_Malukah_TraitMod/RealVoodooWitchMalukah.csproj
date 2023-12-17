@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-	<RootNamespace>TraitMod</RootNamespace>
-	<Product>RealVoodooWitchTraits</Product>
+	<RootNamespace>RealVoodooWitchMalukah</RootNamespace>
+	<Product>Real Voodoo Witch Malukah</Product>
     <AssemblyName>com.shazixnar.RealVoodooWitchTraits</AssemblyName>
     <Description>Real Voodoo Witch Traits, made by Shazixnar</Description>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
