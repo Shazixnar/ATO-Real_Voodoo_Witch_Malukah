@@ -21,12 +21,12 @@ namespace TraitMod
         [HarmonyPatch(typeof(Character), "DamageBonus")]
         public static void DamageBonusPostfix(ref Character __instance, ref float[] __result)
         {
-            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 70)
+            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 120 && __instance.IsHero)
             {
-                int hpDifference = (int)(__instance.HpCurrent - 70);
-                if (hpDifference >= 12)
+                int hpDifference = (int)(__instance.HpCurrent - 120);
+                if (hpDifference >= 18)
                 {
-                    __result[0] += (float)(hpDifference / 12f);
+                    __result[0] += (float)(hpDifference / 18f);
                 }
             }
         }
@@ -35,12 +35,12 @@ namespace TraitMod
         [HarmonyPatch(typeof(Character), "HealReceivedBonus")]
         public static void HealReceivedPostfix(ref Character __instance, ref float[] __result)
         {
-            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 70)
+            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 120 && __instance.IsHero)
             {
-                int hpDifference = (int)(__instance.HpCurrent - 70);
-                if (hpDifference >= 12)
+                int hpDifference = (int)(__instance.HpCurrent - 120);
+                if (hpDifference >= 18)
                 {
-                    __result[0] += (float)(hpDifference / 12f);
+                    __result[0] += (float)(hpDifference / 18f);
                 }
             }
         }

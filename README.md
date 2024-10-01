@@ -1,6 +1,6 @@
 # Real Voodoo Witch Malukah
 
-A content pack for [Obeliskial Content](https://across-the-obelisk.thunderstore.io/package/meds/Obeliskial_Content/) that redo Malukah's traits, healer's cards and some perks.
+A content pack for [Obeliskial Content](https://across-the-obelisk.thunderstore.io/package/meds/Obeliskial_Content/) that redo Malukah's traits and some perks.
 
 <details>
 <summary>Enchantments</summary>
@@ -19,7 +19,7 @@ A content pack for [Obeliskial Content](https://across-the-obelisk.thunderstore.
 
 Jinx: When dealing damage with a Hit, apply 2 Dark and Poison. Regeneration on heroes increases Shadow damage by 0.5 per charge.
 
-Healing Brew: All heroes gain +1 to All damage done and Heal reveived for every 12 hp above 70 hp they have. When you play a \"Healing Spell\" or \"Shadow Spell\" card that costs Energy, refund 1 Energy and grant 2 Regeneration and 1 Vitality to the lowest HP hero. (3 times/turn).
+Healing Brew: All heroes gain +1 to All damage done and Heal reveived for every 18 hp above 120 hp they have. When you play a \"Healing Spell\" or \"Shadow Spell\" card that costs Energy, refund 1 Energy and grant 2 Regeneration and 1 Vitality to the lowest HP hero. (3 times/turn).
 
 ### Level 5
 
@@ -28,24 +28,6 @@ Shadow Form: Dark and Poison +2. Dark on monsters explosion charges charges +5 a
 PS: I modify the logic of increasing dark explosion stack. Now **The Dark One** and other equipment can stack together.
 
 e.g. Team have **The Dark One** and **Black Deck**, Malukah choice Shadow Form trait, so Dark on enemies will explode at 25+9+5+5 = 44 stack.
-</details>
-
-<details>
-<summary>Cards</summary>
-
-### Cards
-
-![Black_Hole](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/black_hole.png?raw=true)
-
-![Circle_of_Healing](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/circle_of_healing.png?raw=true)
-
-![Pulsing_Heal](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/pulsing_heal.png?raw=true)
-
-![Ruin_Bolt](https://github.com/4AleRoL4/ATO-Real_Voodoo_Witch_Malukah/blob/main/Picture/ruin_bolt.png?raw=true)
-
-And 12 more cards.
-
-Cards List: **Black Hole**, **Circle of Healing**, **Condemnation**, **Dark Outbreak**, **Death's Reach**, **Entomb**, **Mass Dispel**, **Melodic Rhythm**, **Profane**, **Pulsing Heal**, **Ruin Bolt**, **Shadow Mend**, **Strong Mojo**, **Unholy Storm**, **Vile Lance**, **Vitalize**.
 </details>
 
 <details>

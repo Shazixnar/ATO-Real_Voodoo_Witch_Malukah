@@ -12,7 +12,7 @@ namespace RealVoodooWitchMalukah
     [BepInProcess("AcrossTheObelisk.exe")]
     public class Plugin : BaseUnityPlugin
     {
-        internal const int ModDate = 20231217;
+        internal const int ModDate = 20241001;
         private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
         internal static ManualLogSource Log;
         private void Awake()
