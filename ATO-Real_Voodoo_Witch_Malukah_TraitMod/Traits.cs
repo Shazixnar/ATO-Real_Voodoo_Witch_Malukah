@@ -21,12 +21,28 @@ namespace TraitMod
         [HarmonyPatch(typeof(Character), "DamageBonus")]
         public static void DamageBonusPostfix(ref Character __instance, ref float[] __result)
         {
-            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 120 && __instance.IsHero)
+            if (AtOManager.Instance.TeamHaveTrait("shazixnarhealingbrew") && __instance.GetMaxHP() > 120 && __instance.IsHero)
             {
-                int hpDifference = (int)(__instance.HpCurrent - 120);
-                if (hpDifference >= 18)
+                int hpDifference = __instance.GetMaxHP() - 120;
+                if (hpDifference >= 9)
                 {
-                    __result[0] += (float)(hpDifference / 18f);
+                    __result[0] += (float)(hpDifference / 9f * 0.2);
+                }
+            }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Character), "GetTraitDamagePercentModifiers")]
+        public static void GetTraitDamagePercentModifiersPostfix(ref Character __instance, ref float __result)
+        {
+            if (AtOManager.Instance.TeamHaveTrait("shazixnarhealingbrew") && __instance.GetMaxHP() > 120 && __instance.IsHero)
+            {
+                int hpDifference = __instance.GetMaxHP() - 120;
+                if (hpDifference >= 9)
+                {
+                    float num1 = hpDifference / 9f;
+                    float num2 = 2f;
+                    __result += num1 * num2;
                 }
             }
         }
@@ -35,12 +51,13 @@ namespace TraitMod
         [HarmonyPatch(typeof(Character), "HealReceivedBonus")]
         public static void HealReceivedPostfix(ref Character __instance, ref float[] __result)
         {
-            if (AtOManager.Instance.TeamHaveTrait("malukahhealingbrew") && __instance.HpCurrent > 120 && __instance.IsHero)
+            if (AtOManager.Instance.TeamHaveTrait("shazixnarhealingbrew") && __instance.GetMaxHP() > 120 && __instance.IsHero)
             {
-                int hpDifference = (int)(__instance.HpCurrent - 120);
-                if (hpDifference >= 18)
+                int hpDifference = __instance.GetMaxHP() - 120;
+                if (hpDifference >= 9)
                 {
-                    __result[0] += (float)(hpDifference / 18f);
+                    __result[0] += (float)(hpDifference / 9f * 0.2);
+                    __result[1] += (float)(hpDifference / 9f * 2);
                 }
             }
         }
@@ -59,7 +76,7 @@ namespace TraitMod
         }
 
         // list of your trait IDs
-        public static string[] myTraitList = { "malukahjinx", "malukahhealingbrew" };
+        public static string[] myTraitList = { "shazixnarjinx", "shazixnarhealingbrew" };
 
         public static void myDoTrait(string _trait, ref Trait __instance)
         {
@@ -83,7 +100,7 @@ namespace TraitMod
             NPC[] teamNpc = MatchManager.Instance.GetTeamNPC();
 
             // activate traits
-            if (_trait == "malukahjinx")
+            if (_trait == "shazixnarjinx")
             {
                 if (_target != null && _target.Alive)
                 {
@@ -93,31 +110,31 @@ namespace TraitMod
                 }
                 return;
             }
-            else if (_trait == "malukahhealingbrew")
+            else if (_trait == "shazixnarhealingbrew")
             {
                 if (MatchManager.Instance != null && _castedCard != null)
                 {
-                    traitData = Globals.Instance.GetTraitData("malukahhealingbrew");
-                    if (MatchManager.Instance.activatedTraits != null && MatchManager.Instance.activatedTraits.ContainsKey("malukahhealingbrew") && MatchManager.Instance.activatedTraits["malukahhealingbrew"] > traitData.TimesPerTurn - 1)
+                    traitData = Globals.Instance.GetTraitData("shazixnarhealingbrew");
+                    if (MatchManager.Instance.activatedTraits != null && MatchManager.Instance.activatedTraits.ContainsKey("shazixnarhealingbrew") && MatchManager.Instance.activatedTraits["shazixnarhealingbrew"] > traitData.TimesPerTurn - 1)
                     {
                         return;
                     }
                     if (MatchManager.Instance.energyJustWastedByHero > 0 && (_castedCard.GetCardTypes().Contains(Enums.CardType.Healing_Spell) || _castedCard.GetCardTypes().Contains(Enums.CardType.Shadow_Spell)) && _character.HeroData != null)
                     {
-                        if (!MatchManager.Instance.activatedTraits.ContainsKey("malukahhealingbrew"))
+                        if (!MatchManager.Instance.activatedTraits.ContainsKey("shazixnarhealingbrew"))
                         {
-                            MatchManager.Instance.activatedTraits.Add("malukahhealingbrew", 1);
+                            MatchManager.Instance.activatedTraits.Add("shazixnarhealingbrew", 1);
                         }
                         else
                         {
                             Dictionary<string, int> activatedTraits = MatchManager.Instance.activatedTraits;
-                            activatedTraits["malukahhealingbrew"] = activatedTraits["malukahhealingbrew"] + 1;
+                            activatedTraits["shazixnarhealingbrew"] = activatedTraits["shazixnarhealingbrew"] + 1;
                         }
                         MatchManager.Instance.SetTraitInfoText();
                         _character.ModifyEnergy(1, true);
                         if (_character.HeroItem != null)
                         {
-                            _character.HeroItem.ScrollCombatText(Texts.Instance.GetText("traits_Healing Brew", "") + TextChargesLeft(MatchManager.Instance.activatedTraits["malukahhealingbrew"], traitData.TimesPerTurn), Enums.CombatScrollEffectType.Trait);
+                            _character.HeroItem.ScrollCombatText(Texts.Instance.GetText("traits_Healing Brew", "") + TextChargesLeft(MatchManager.Instance.activatedTraits["shazixnarhealingbrew"], traitData.TimesPerTurn), Enums.CombatScrollEffectType.Trait);
                             EffectsManager.Instance.PlayEffectAC("energy", true, _character.HeroItem.CharImageT, false, 0f);
                         }
                         int lowHP = teamHero[0].HpCurrent;
@@ -207,7 +224,7 @@ namespace TraitMod
                         {
                             ExplodeAtStacksModify += Globals.Instance.GetItemData("cupofdeath").AuracurseCustomModValue1 - 25;
                         }
-                        if (__instance.TeamHaveTrait("malukahshadowform"))
+                        if (__instance.TeamHaveTrait("shazixnarshadowform"))
                         {
                             ExplodeAtStacksModify += 5;
                             DamageWhenConsumedPerChargeModify += 0.5f;
@@ -225,7 +242,7 @@ namespace TraitMod
                     float DamageWhenConsumedPerChargeModify = 2;
                     if (!flag)
                     {
-                        if (__instance.TeamHaveTrait("malukahshadowform"))
+                        if (__instance.TeamHaveTrait("shazixnarshadowform"))
                         {
                             DamageWhenConsumedPerChargeModify += 0.5f;
                         }
@@ -251,7 +268,7 @@ namespace TraitMod
                 }
             }
             else if (_acId == "regeneration" && _type == "set" && flag2)
-            { 
+            {
                 if (__instance.TeamHavePerk("mainperkregeneration1c"))
                 { // Regeneration on heroes also increases all resistance by 0.5% per charge and increases Max HP by 1 per charge.
                     __result.ResistModified = Enums.DamageType.All;
@@ -259,15 +276,26 @@ namespace TraitMod
                     __result.CharacterStatModified = Enums.CharacterStat.Hp;
                     __result.CharacterStatModifiedValuePerStack = 1;
                 }
-                if (__instance.TeamHaveTrait("malukahjinx"))
+                if (__instance.TeamHaveTrait("shazixnarjinx"))
                 { // Regeneration on heroes increases Shadow damage by 0.5 per charge.
                     __result.AuraDamageType = Enums.DamageType.Shadow;
                     __result.AuraDamageIncreasedPerStack = 0.5f;
                 }
+                if (__instance.TeamHaveTrait("shazixnarmojo"))
+                { // Increase Max charge 25
+                    __result.MaxMadnessCharges = 75;
+                }
             }
-            else if (_acId == "vitality" && _type == "set" && flag2 && _characterTarget != null && __instance.TeamHavePerk("mainperkvitality1a"))
-            { // Vitality on heroes instead increases Max HP by 8 per charge.
-                __result.CharacterStatModifiedValuePerStack = 8;
+            else if (_acId == "vitality" && _type == "set" && flag2)
+            {
+                if (__instance.TeamHaveTrait("shazixnarmojo"))
+                { // Increase Max charge 25
+                    __result.MaxMadnessCharges = 75;
+                }
+                if (__instance.TeamHavePerk("mainperkvitality1a") && _characterTarget != null)
+                { // Vitality on heroes instead increases Max HP by 8 per charge.
+                    __result.CharacterStatModifiedValuePerStack = 8;
+                }
             }
         }
 

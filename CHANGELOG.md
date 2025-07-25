@@ -1,8 +1,18 @@
+# 1.1.3
+
+change some descriptions.
+
+# 1.1.2
+
+change the **Healing Brew** trait.
+
+Now **Mojo** trait can change **Regeneration** and **Vitality** Max charge to 25.
+
 # 1.1.1
 
-Nerf enchantment **Yang Ritual**. No longer +1 Vitality charge.
+Nerf enchantment **Yang Ritual**. No longer gain +1 Vitality charge.
 
-Nerf trait **Healing Brew**. Now need above 120 HP and gain bonus per 18 HP. And fix bug: No longer effects on enemies (Why no one find out this bug...)
+Nerf trait **Healing Brew**. Now need above 120 HP and gain bonus per 18 HP. And fix bug: No longer effects on enemies
 
 # 1.1.0
 

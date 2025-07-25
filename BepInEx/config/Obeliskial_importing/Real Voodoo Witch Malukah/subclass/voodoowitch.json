@@ -59,11 +59,11 @@
     "Trait0": "voodoo",
     "Trait1A": "yinritual",
     "Trait1B": "yangritual",
-    "Trait2A": "malukahjinx",
-    "Trait2B": "malukahhealingbrew",
+    "Trait2A": "shazixnarjinx",
+    "Trait2B": "shazixnarhealingbrew",
     "Trait3A": "vaccine",
     "Trait3B": "loveenhancer",
-    "Trait4A": "malukahshadowform",
-    "Trait4B": "mojo",
+    "Trait4A": "shazixnarshadowform",
+    "Trait4B": "shazixnarmojo",
     "AutoUnlock": false
 }

@@ -1,5 +1,5 @@
 {
-    "Activation": "FinishCast",
+    "Activation": "Damage",
     "AuraCurseBonus1": "",
     "AuraCurseBonus2": "",
     "AuraCurseBonus3": "",
@@ -23,12 +23,12 @@
     "DamageBonusPercentValue": 0.0,
     "DamageBonusPercentValue2": 0.0,
     "DamageBonusPercentValue3": 0.0,
-    "Description": "All heroes gain +1 to All damage done and Heal reveived for every 18 hp above 120 hp they have. When you play a \"Healing Spell\" or \"Shadow Spell\" card that costs Energy, refund 1 Energy and grant 2 Regeneration and 1 Vitality to the lowest HP hero. (3 times/turn)",
+    "Description": "When dealing damage with a Hit, apply 2 Dark and Poison. <br>Regeneration on heroes increases Shadow damage by 0.5 per charge.",
     "HealFlatBonus": 0,
     "HealPercentBonus": 0.0,
     "HealReceivedFlatBonus": 0,
     "HealReceivedPercentBonus": 0.0,
-    "ID": "malukahhealingbrew",
+    "ID": "shazixnarjinx",
     "ResistModified1": "None",
     "ResistModified2": "None",
     "ResistModified3": "None",
@@ -36,8 +36,8 @@
     "ResistModifiedValue2": 0,
     "ResistModifiedValue3": 0,
     "TimesPerRound": 0,
-    "TimesPerTurn": 3,
+    "TimesPerTurn": 0,
     "TraitCard": "",
     "TraitCardForAllHeroes": "",
-    "TraitName": "Healing Brew"
+    "TraitName": "Jinx"
 }

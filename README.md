@@ -19,11 +19,13 @@ A content pack for [Obeliskial Content](https://across-the-obelisk.thunderstore.
 
 Jinx: When dealing damage with a Hit, apply 2 Dark and Poison. Regeneration on heroes increases Shadow damage by 0.5 per charge.
 
-Healing Brew: All heroes gain +1 to All damage done and Heal reveived for every 18 hp above 120 hp they have. When you play a \"Healing Spell\" or \"Shadow Spell\" card that costs Energy, refund 1 Energy and grant 2 Regeneration and 1 Vitality to the lowest HP hero. (3 times/turn).
+Healing Brew: All heroes gain +0.2 and +0.2% to All damage done and Heal reveived for every 9 hp above 120 hp they have. When you play a \"Healing Spell\" or \"Shadow Spell\" card that costs Energy, refund 1 Energy and grant 2 Regeneration and 1 Vitality to the lowest HP hero. (3 times/turn).
 
 ### Level 5
 
 Shadow Form: Dark and Poison +2. Dark on monsters explosion charges charges +5 and deals 0.5 more damage per charge.
+
+Mojo: Regeneration +1, Vitality +1, Max charge is 75. When you play a \"Healing Spell\" card, Dispel 1 to all heroes.
 
 PS: I modify the logic of increasing dark explosion stack. Now **The Dark One** and other equipment can stack together.
 

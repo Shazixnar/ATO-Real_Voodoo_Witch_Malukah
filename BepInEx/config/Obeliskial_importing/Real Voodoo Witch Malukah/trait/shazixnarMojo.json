@@ -1,10 +1,10 @@
 {
-    "Activation": "Damage",
-    "AuraCurseBonus1": "",
-    "AuraCurseBonus2": "",
+    "Activation": "FinishCast",
+    "AuraCurseBonus1": "regeneration",
+    "AuraCurseBonus2": "vitality",
     "AuraCurseBonus3": "",
-    "AuraCurseBonusValue1": 0,
-    "AuraCurseBonusValue2": 0,
+    "AuraCurseBonusValue1": 1,
+    "AuraCurseBonusValue2": 1,
     "AuraCurseBonusValue3": 0,
     "AuraCurseImmune1": "",
     "AuraCurseImmune2": "",
@@ -23,12 +23,12 @@
     "DamageBonusPercentValue": 0.0,
     "DamageBonusPercentValue2": 0.0,
     "DamageBonusPercentValue3": 0.0,
-    "Description": "When dealing damage with a Hit, apply 2 Dark and Poison. Regeneration on heroes increases Shadow damage by 0.5 per charge.",
+    "Description": "Regeneration +1, Vitality +1, Max charge is 75. <br>When you play a \"Healing Spell\" card, Dispel 1 to all heroes.",
     "HealFlatBonus": 0,
     "HealPercentBonus": 0.0,
     "HealReceivedFlatBonus": 0,
     "HealReceivedPercentBonus": 0.0,
-    "ID": "malukahjinx",
+    "ID": "shazixnarmojo",
     "ResistModified1": "None",
     "ResistModified2": "None",
     "ResistModified3": "None",
@@ -39,5 +39,5 @@
     "TimesPerTurn": 0,
     "TraitCard": "",
     "TraitCardForAllHeroes": "",
-    "TraitName": "Jinx"
+    "TraitName": "Mojo"
 }

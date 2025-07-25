@@ -6,7 +6,7 @@
 	<Product>Real Voodoo Witch Malukah</Product>
     <AssemblyName>com.shazixnar.RealVoodooWitchTraits</AssemblyName>
     <Description>Real Voodoo Witch Traits, made by Shazixnar</Description>
-    <Version>1.1.1</Version>
+    <Version>1.1.3</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -33,13 +33,13 @@
       <HintPath>..\..\!libs\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="com.stiffmeds.obeliskialessentials">
-      <HintPath>..\..\!libs\Obeliskial Essentials.dll</HintPath>
+      <HintPath>..\..\!libs\com.stiffmeds.obeliskialessentials.dll</HintPath>
     </Reference>
     <Reference Include="com.stiffmeds.obeliskialcontent">
-      <HintPath>..\..\!libs\Obeliskial Content.dll</HintPath>
+      <HintPath>..\..\!libs\com.stiffmeds.obeliskialcontent.dll</HintPath>
     </Reference>
     <Reference Include="com.stiffmeds.obeliskialoptions">
-      <HintPath>..\..\!libs\Obeliskial Options.dll</HintPath>
+      <HintPath>..\..\!libs\com.stiffmeds.obeliskialoptions.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
